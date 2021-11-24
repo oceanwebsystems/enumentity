@@ -23,3 +23,5 @@ jobs:
       run: dotnet build --no-restore ./OceanWebSystems.EnumEntity/
     - name: Test
       run: dotnet test --no-build --verbosity normal ./OceanWebSystems.EnumEntity/
+    - name: Pack
+      run: dotnet pack ./OceanWebSystems.EnumEntity/OceanWebSystems.EnumEntity/OceanWebSystems.EnumEntity.csproj --output nupkgs
