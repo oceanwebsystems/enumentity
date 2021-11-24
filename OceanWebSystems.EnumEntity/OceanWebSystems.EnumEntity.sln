@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OceanWebSystems.EnumEntity", "OceanWebSystems.EnumEntity\OceanWebSystems.EnumEntity.csproj", "{32F1B329-A910-42EB-88E2-BB085A0222A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OceanWebSystems.EnumEntity", "OceanWebSystems.EnumEntity\OceanWebSystems.EnumEntity.csproj", "{32F1B329-A910-42EB-88E2-BB085A0222A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OceanWebSystems.EnumEntity.Test", "OceanWebSystems.EnumEntity.Test\OceanWebSystems.EnumEntity.Test.csproj", "{D272940F-AAC4-465D-AE39-F0548CF469F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OceanWebSystems.EnumEntity.Test", "OceanWebSystems.EnumEntity.Test\OceanWebSystems.EnumEntity.Test.csproj", "{D272940F-AAC4-465D-AE39-F0548CF469F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OceanWebSystems.EnumEntity.Sample", "OceanWebSystems.EnumEntity.Sample\OceanWebSystems.EnumEntity.Sample.csproj", "{C41A2256-81F8-4058-AB63-5F7D803088C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D272940F-AAC4-465D-AE39-F0548CF469F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D272940F-AAC4-465D-AE39-F0548CF469F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D272940F-AAC4-465D-AE39-F0548CF469F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C41A2256-81F8-4058-AB63-5F7D803088C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41A2256-81F8-4058-AB63-5F7D803088C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41A2256-81F8-4058-AB63-5F7D803088C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41A2256-81F8-4058-AB63-5F7D803088C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
