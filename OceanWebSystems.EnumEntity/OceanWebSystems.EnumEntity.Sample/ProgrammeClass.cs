@@ -26,6 +26,7 @@ namespace OceanWebSystems.EnumEntity.Sample
         General = 7,
 
         [Display(Order = 5)]
+        [EnumDeleted]
         Optometry = 8,
 
         [Display(Order = 11)]

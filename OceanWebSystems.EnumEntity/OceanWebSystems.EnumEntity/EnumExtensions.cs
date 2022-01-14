@@ -64,5 +64,24 @@ namespace OceanWebSystems.EnumEntity
 
             return attribute?.GetOrder();
         }
+
+        /// <summary>
+        /// Gets a value indicating whether the enum value has been deleted.
+        /// </summary>
+        /// <param name="enumValue">
+        /// The <see cref="Enum"/>.
+        /// </param>
+        /// <returns>
+        /// A <see cref="Nullable{Boolean}"/> containing the value of the Order property of the Display attribute.
+        /// </returns>
+        internal static bool? GetIsDeleted(this Enum enumValue)
+        {
+            EnumDeletedAttribute? attribute = enumValue.GetType()
+                .GetMember(enumValue.ToString())
+                .First()
+                .GetCustomAttribute<EnumDeletedAttribute>();
+
+            return attribute != null;
+        }
     }
 }

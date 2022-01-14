@@ -27,7 +27,7 @@ namespace OceanWebSystems.EnumEntity.Test
         }
 
         [Test]
-        public void TestEntityWithNonNullableEnumForeignKetIsRequired()
+        public void TestEntityWithNonNullableEnumForeignKeyIsRequired()
         {
             IForeignKey? foreignKey = null;
             var entity = _context?.Model.FindEntityType(typeof(TestEntityWithNonNullableEnum));
@@ -42,7 +42,7 @@ namespace OceanWebSystems.EnumEntity.Test
         }
 
         [Test]
-        public void TestEntityWithNullableEnumForeignKetIsRequired()
+        public void TestEntityWithNullableEnumForeignKeyIsRequired()
         {
             IForeignKey? foreignKey = null;
             var entity = _context?.Model.FindEntityType(typeof(TestEntityWithNullableEnum));
@@ -181,6 +181,26 @@ namespace OceanWebSystems.EnumEntity.Test
             }
 
             Assert.AreEqual(expectedDisplayOrder, enumEntity?.Order);
+        }
+
+        [Test]
+        [TestCase(1, false)]
+        [TestCase(2, false)]
+        [TestCase(3, false)]
+        [TestCase(4, false)]
+        [TestCase(5, false)]
+        [TestCase(6, false)]
+        [TestCase(7, true)]
+        public async Task DbSetIsDeletedIsCorrect(int keyValue, bool? expectedIsDeleted)
+        {
+            EnumEntity<TestEnum>? enumEntity = null;
+            var dbSet = _context?.Set<EnumEntity<TestEnum>>();
+            if (dbSet != null)
+            {
+                enumEntity = await dbSet.FindAsync(keyValue);
+            }
+
+            Assert.AreEqual(expectedIsDeleted, enumEntity?.IsDeleted);
         }
     }
 }
