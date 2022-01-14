@@ -28,6 +28,11 @@
             {
                 this.Order = value.GetDisplayOrder();
             }
+
+            if (value.GetIsDeleted().HasValue)
+            {
+                this.IsDeleted = value.GetIsDeleted();
+            }
         }
 
         /// <summary>
@@ -69,5 +74,14 @@
         /// The order in which to display the enumeration value.
         /// </value>
         public int? Order { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether the value has been deleted
+        /// and should not be displayed.
+        /// </summary>
+        /// <value>
+        /// The value indicating whether the value has been deleted.
+        /// </value>
+        public bool? IsDeleted { get; set; }
     }
 }

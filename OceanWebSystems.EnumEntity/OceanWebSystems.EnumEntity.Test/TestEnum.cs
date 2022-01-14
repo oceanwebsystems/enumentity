@@ -15,6 +15,7 @@ namespace OceanWebSystems.EnumEntity.Test
         ValueFive = 5,
         [Display(Order = 1)]
         ValueSix = 6,
+        [EnumDeleted]
         ValueSeven = 7,
     }
 }

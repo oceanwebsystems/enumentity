@@ -7,14 +7,14 @@
     <PackageIcon>oceanweb-artwork-orb.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <PackageTags>ef</PackageTags>
-    <Version>1.0.0-alpha1</Version>
+    <Version>1.0.0</Version>
     <Company>OceanWeb Systems</Company>
     <Authors>Stuart Whiteford</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/oceanwebsystems/enumentity.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/oceanwebsystems/enumentity</PackageProjectUrl>
     <Description>An extension to build a lookup table for each enum type used in the DbContext model.</Description>
-    <Copyright>Copyright © OceanWeb Systems Limited 2021. All rights reserved.</Copyright>
+    <Copyright>Copyright © OceanWeb Systems Limited 2022. All rights reserved.</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
